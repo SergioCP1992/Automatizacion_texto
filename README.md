@@ -1,30 +1,11 @@
-# 
-# 0.1 — Crear y activar entorno virtual
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
 
-# 0.2 — requirements.txt
-cat > requirements.txt << 'EOF'
-pandas
-scikit-learn
-joblib
-fastapi
-uvicorn
-pytest
-EOF
+# Clasificador de mensajes (Spam vs No Spam)
 
-# 0.3 — .gitignore
-cat > .gitignore << 'EOF'
-# Entorno
-.venv/
-# Modelos y cachés
-models/
-__pycache__/
-# Datos locales
-data/
-EOF
+Proyecto básico en Python que:
+- Entrena un modelo para clasificar mensajes como **spam** o **no_spam**.
+- Permite predecir desde la consola.
+- Organiza archivos de texto automáticamente según la predicción.
 
+## Instalación
+```bash
 pip install -r requirements.txt
